@@ -1,41 +1,26 @@
-#name = input('what is your name? ')
-#favorite_color = input('What is your favorite color? ')
-#print('%s likes %s' % (name, favorite_color))
+is_hot = False
+is_cold = False
 
-#birth_year = input('Birth ')
-#age = 2020 - int(birth_year)
-
-#print(age)
-
-#weight = input('Weight in lbs ')
-#weight_kg = int(weight) * 0.45
-#print(weight_kg)
-
-multiline = '''
-    Here 
-    a 
-    big text
-'''
-
-#print(multiline)
-
-stringy = 'pablo'
-#print(stringy[-2]) #l
-
-#concate with the prefix  -> f''
-first = 'goku'
-second = 'gohan'
-msg = f'{first} and {second} are familiars'
-
-#print(msg)
+if is_hot:
+    print('Its hot day')
+elif is_cold:
+    print('Its cold day')
+else:
+    print('lovely day')
+print('Enjoy the day')
 
 
+buyer_good_credit = False
+put_down = 0
+price = 1000000
 
-#maths
-print(round(2.9))
-print(abs(-2.9))
+if buyer_good_credit:
+    print('10% less')
+    put_down = 10
+else:
+    print('20% less')
+    put_down = 20
 
-import math
-
-print(math.ceil(2.3))
-print(math.floor(2.8))
+down_price = price * (put_down / 100)
+print(down_price)
+print(f"Your price is: {price - down_price}")
