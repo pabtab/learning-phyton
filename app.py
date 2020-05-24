@@ -13,8 +13,10 @@ print('Enjoy the day')
 buyer_good_credit = False
 put_down = 0
 price = 1000000
+whatever = True
+something = false
 
-if buyer_good_credit:
+if buyer_good_credit and whatever or not something:
     print('10% less')
     put_down = 10
 else:
